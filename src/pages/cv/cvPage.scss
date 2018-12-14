@@ -1,0 +1,94 @@
+.cv-page{
+    box-shadow: 0 0 20px #ccc;
+    font-weight: 100;
+    word-wrap: break-word;
+
+    .cv-header{
+        padding: 15px;
+    }
+
+    .cv-content{
+        display: flex;
+
+        .section{
+            margin-top: 20px;
+
+            .section-title{
+                font-weight: bold;
+                &+hr{
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .cv-info{
+            flex-grow: 3;
+            padding: 15px;
+
+            .time-item{
+
+                display: flex;
+
+                .time{
+                    flex-grow: 1;
+                    font-weight: bold;
+                }
+
+                .item{
+                    flex-grow: 3;
+
+                    .item-title{
+                        font-weight: bold;
+                    }
+
+                    .item-description{
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+
+        .personal-info{
+            flex-grow: 1;
+            background-color: #f4f4f4;
+            padding: 15px;
+            min-width: 250px;
+            
+            .skill-title{
+                font-weight: bolder;
+                &+hr{
+                    margin-top: 0;
+                }
+            }
+
+            .skill-item{
+
+                display: flex;
+
+                .skill-item-title{
+                    flex-grow: 1;
+                }
+
+                .skill-item-score{
+                    flex-grow: 1;
+                    text-align: right;
+    
+                    .score, .scored{
+                        &::before{
+                            content: ' \25CF';
+                            font-size: 20px;
+                        }
+                    }
+        
+                    .scored{
+                        color: #343a40;
+                    }
+        
+                    .score{
+                        color: #c4c4c4;
+                    }
+                }
+            }
+        }
+    }
+}

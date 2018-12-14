@@ -1,0 +1,51 @@
+.cv-page {
+  box-shadow: 0 0 20px #ccc;
+  font-weight: 100;
+  word-wrap: break-word; }
+  .cv-page .cv-header {
+    padding: 15px; }
+  .cv-page .cv-content {
+    display: flex; }
+    .cv-page .cv-content .section {
+      margin-top: 20px; }
+      .cv-page .cv-content .section .section-title {
+        font-weight: bold; }
+        .cv-page .cv-content .section .section-title + hr {
+          margin-top: 0; }
+    .cv-page .cv-content .cv-info {
+      flex-grow: 3;
+      padding: 15px; }
+      .cv-page .cv-content .cv-info .time-item {
+        display: flex; }
+        .cv-page .cv-content .cv-info .time-item .time {
+          flex-grow: 1;
+          font-weight: bold; }
+        .cv-page .cv-content .cv-info .time-item .item {
+          flex-grow: 3; }
+          .cv-page .cv-content .cv-info .time-item .item .item-title {
+            font-weight: bold; }
+          .cv-page .cv-content .cv-info .time-item .item .item-description {
+            font-style: italic; }
+    .cv-page .cv-content .personal-info {
+      flex-grow: 1;
+      background-color: #f4f4f4;
+      padding: 15px;
+      min-width: 250px; }
+      .cv-page .cv-content .personal-info .skill-title {
+        font-weight: bolder; }
+        .cv-page .cv-content .personal-info .skill-title + hr {
+          margin-top: 0; }
+      .cv-page .cv-content .personal-info .skill-item {
+        display: flex; }
+        .cv-page .cv-content .personal-info .skill-item .skill-item-title {
+          flex-grow: 1; }
+        .cv-page .cv-content .personal-info .skill-item .skill-item-score {
+          flex-grow: 1;
+          text-align: right; }
+          .cv-page .cv-content .personal-info .skill-item .skill-item-score .score::before, .cv-page .cv-content .personal-info .skill-item .skill-item-score .scored::before {
+            content: ' \25CF';
+            font-size: 20px; }
+          .cv-page .cv-content .personal-info .skill-item .skill-item-score .scored {
+            color: #343a40; }
+          .cv-page .cv-content .personal-info .skill-item .skill-item-score .score {
+            color: #c4c4c4; }
